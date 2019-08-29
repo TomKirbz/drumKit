@@ -1,7 +1,7 @@
 // Play drum by keyboard press
 const sound = new Audio();
 
-document.addEventListener("keydown", event => {
+document.addEventListener("keypress", event => {
      
     switch(event.key){
         case "a":
@@ -68,12 +68,49 @@ document.addEventListener("keydown", event => {
 
 // Play music by mouse click
 
-const aKeyPress = () => {sound.src = './sounds/clap.wav'; sound.play()}
-const sKeyPress = () => {sound.src = './sounds/hihat.wav'; sound.play()}
-const dKeyPress = () => {sound.src = './sounds/kick.wav'; sound.play()}
-const fKeyPress = () => {sound.src = './sounds/openhat.wav'; sound.play()}
-const gKeyPress = () => {sound.src = './sounds/boom.wav'; sound.play()}
-const hKeyPress = () => {sound.src = './sounds/ride.wav'; sound.play()}
-const jKeyPress = () => {sound.src = './sounds/snare.wav'; sound.play()}
-const kKeyPress = () => {sound.src = './sounds/tom.wav'; sound.play()}
-const lKeyPress = () => {sound.src = './sounds/tink.wav'; sound.play()}
+document.getElementById("sound-button-a").addEventListener("click", () => {
+        sound.src = './sounds/clap.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-s").addEventListener("click", () => {
+        sound.src = './sounds/hihat.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-d").addEventListener("click", () => {
+        sound.src = './sounds/kick.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-f").addEventListener("click", () => {
+        sound.src = './sounds/openhat.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-g").addEventListener("click", () => {
+        sound.src = './sounds/boom.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-h").addEventListener("click", () => {
+        sound.src = './sounds/ride.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-j").addEventListener("click", () => {
+        sound.src = './sounds/snare.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-k").addEventListener("click", () => {
+        sound.src = './sounds/tom.wav'; 
+        sound.play()
+})
+
+document.getElementById("sound-button-l").addEventListener("click", () => {
+        sound.src = './sounds/tink.wav'; 
+        sound.play()
+})
+
+
